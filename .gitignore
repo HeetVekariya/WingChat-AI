@@ -1,3 +1,4 @@
 venv/
 src/chatapp_crew/__pycache__/
 __pycache__/
+logs.txt/
