@@ -1,0 +1,26 @@
+blood_report_analysis_task:
+  description: >
+    The blood_report_analysis_task is responsible for extracting and analyzing data from a sample blood test report present in the {data} directory. This task involves parsing the report to identify key health indicators such as cholesterol levels, blood sugar levels, red and white blood cell counts, and other relevant biomarkers. The task should summarize these findings in an easy-to-understand manner, highlighting any abnormal values or areas of concern.
+  expected_output: >
+    A structured summary of the blood test report, including:
+    1) List of health indicators with their respective values.
+    2) Identification of any abnormal values (e.g., values outside the normal range).
+    3) A brief, user-friendly summary explaining the significance of each health indicator and any noted abnormalities.
+
+articles_search_task:
+  description: >
+    The articles_search_task is designed to find and retrieve relevant health articles based on the health indicators identified in the blood test report. This task involves using search tool provided in the tools folder to locate credible sources that provide information on the user's specific health needs. The articles should be relevant, up-to-date, and from reputable sources.
+  expected_output: >
+    A collection of summarized articles, including:
+    1) Titles and URLs of relevant health articles.
+    2) Brief summaries of each article's content.
+    3) An explanation of why each article is relevant to the user's health indicators and how it can help them understand their health condition better.
+
+recommendation_task:
+  description: >
+    The recommendation_task focuses on generating personalized health recommendations based on the analysis of the blood test report and the research articles found. This task synthesizes the information to provide actionable advice tailored to the user's specific health needs. Recommendations should be practical, evidence-based, and aimed at improving or maintaining the user's health.
+  expected_output: >
+    A set of personalized health recommendations, including:
+    1) Specific actions the user can take to address any health concerns identified in the blood test report (e.g., dietary changes, exercise suggestions, medical consultations).
+    2) Links to the relevant articles found by the articles_search_task for further reading.
+    3) An overall summary of the user's health status with clear, actionable advice to help them make informed decisions about their health.
