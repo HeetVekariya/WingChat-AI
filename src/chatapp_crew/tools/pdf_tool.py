@@ -8,20 +8,16 @@ tool = PDFSearchTool(
     pdf="src\chatapp_crew\data\\blood test report.pdf",
     config=dict(
         llm=dict(
-            provider="llama3", # or google, openai, anthropic, llama2, ...
+            provider="ollama",
             config=dict(
-                #model="llama2",
-                # temperature=0.5,
-                # top_p=1,
-                # stream=true,
+                model="llama2"
             ),
         ),
         embedder=dict(
-            provider="google", # or openai, ollama, ...
+            provider="google", 
             config=dict(
                 model="models/embedding-001",
                 task_type="retrieval_document",
-                # title="Embeddings",
             ),
         ),
     )
