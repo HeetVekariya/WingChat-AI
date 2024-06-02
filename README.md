@@ -29,10 +29,10 @@ WingChat-AI is a specialized AI agent designed to analyze blood test reports. Th
   - **recommender Agent**: Provides recommendations based on the blood report analysis and researcher agents findings.
 
 ## UI Design
-![WingChat-AI UI](UI\image.png)
+![WingChat-AI UI](UI/UI.png)
 
 ## Demo Video
-[![WingChat-AI Demo Video](UI\image.png)](https://youtu.be/T284I1yLMtg?si=-hYj16Acsy-X3Yye)
+[![WingChat-AI Demo Video](UI/UI.png)](https://youtu.be/T284I1yLMtg?si=-hYj16Acsy-X3Yye)
 
 <br>
 
