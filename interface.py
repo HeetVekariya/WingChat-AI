@@ -21,6 +21,7 @@ def browse_file():
 
         print(f"Selected file: {file_path}")
         print(f"Destination path: {destination_path}")
+        
         # Copy the selected file to the destination path
         shutil.copy(file_path, destination_path)
 
@@ -45,7 +46,7 @@ def start_process():
     analyst_logs, researcher_logs, recommender_logs = split_logs('logs.txt')
 
     start_button.config(background="green")
-    
+
     # Clear the text area
     process_text.delete(1.0, tk.END)
     process_text.insert(tk.END, f"Parsing complete. Please select an agent to view their findings.")
@@ -93,7 +94,7 @@ recommender_button = tk.Button(window, text="Recommender", command=show_recommen
 recommender_button.place(relx=0.63, rely=0.4, anchor="center")
 
 # Create a text area to display the selected agent's findings
-process_text = tk.Text(window)
+process_text = tk.Text(window, background='black', foreground='white', font=('Arial', 10))
 process_text.place(relx=0.1, rely=0.6, relwidth=0.8, relheight=0.3)
 
 # Set the window title
