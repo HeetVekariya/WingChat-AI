@@ -1,6 +1,6 @@
 blood_report_analysis_task:
   description: >
-    The blood_report_analysis_task is responsible for extracting and analyzing data from a sample blood test report present in the {data} directory. This task involves parsing the report to identify key health indicators such as cholesterol levels, blood sugar levels, red and white blood cell counts, and other relevant biomarkers. The task should summarize these findings in an easy-to-understand manner, highlighting any abnormal values or areas of concern.
+    The blood_report_analysis_task is responsible for extracting and analyzing data from a sample blood test report present in the {data} directory. This task involves parsing the report using the PDFSearchTool tool present at {pdf_tool} to identify key health indicators such as cholesterol levels, blood sugar levels, red and white blood cell counts, and other relevant biomarkers. The task should summarize these findings in an easy-to-understand manner, highlighting any abnormal values or areas of concern.
   expected_output: >
     A structured summary of the blood test report, including:
     1) List of health indicators with their respective values.
@@ -9,7 +9,7 @@ blood_report_analysis_task:
 
 articles_search_task:
   description: >
-    The articles_search_task is designed to find and retrieve relevant health articles based on the health indicators identified in the blood test report. This task involves using search tool provided in the tools folder to locate credible sources that provide information on the user's specific health needs. The articles should be relevant, up-to-date, and from reputable sources.
+    The articles_search_task is designed to find and retrieve relevant health articles based on the health indicators identified in the blood test report. This task involves using search tool present at {search_tool} in the tools folder to locate credible sources that provide information on the user's specific health needs. The articles should be relevant, up-to-date, and from reputable sources.
   expected_output: >
     A collection of summarized articles, including:
     1) Titles and URLs of relevant health articles.
